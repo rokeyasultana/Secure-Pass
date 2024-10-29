@@ -1,46 +1,107 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>SecurePass</title>
-  <!-- css file -->
-  <link rel="stylesheet" href="styles.css">
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SecurePass</title>
+    <!-- css file -->
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- pass -->
+    <div class="password">
+      <div>
+        <img
+          class="image"
+          src="https://www.lastpass.com/-/media/0086569cb8be41d5870183fea8cde765.svg?la=en&hash=B6A7489F1C763C10AE5CE1D225381972"
+          alt=""
+        />
+      </div>
+      <div>
+        <h4>Password Generator</h4>
+        <h2>Your passwords, from any device</h2>
+        <p>
+          Create strong and secure passwords to keep your account safe
+          online.Automatically generate, save and sync your passwords across all
+          your devices at any time with LastPass.
+        </p>
+      </div>
+    </div>
+    <h1>
+      Instantly generate a secure, random<br />
+      password with the LastPass online tool
+    </h1>
+    <p id="pass">
+      Use our online password generator tool to instantly create a secure,
+      random password.
+    </p>
+    <div class="container">
+      <div class="options">
+        <label for="length"
+          >Password Length: <span id="lengthValue">12</span></label
+        >
+        <input type="range" id="length" min="6" max="32" value="12" />
 
-<!-- pass -->
-<div class="password">
-  <div>
-    <img class="image" src="https://www.lastpass.com/-/media/0086569cb8be41d5870183fea8cde765.svg?la=en&hash=B6A7489F1C763C10AE5CE1D225381972" alt=""/>
-  </div>
-  <div>
-    <h4>Password Generator</h4>
-    <h2>Your passwords, from any device</h2>
-    <P>Create strong and secure passwords to keep your account safe online.Automatically generate, save and sync your passwords across all your devices at any time with LastPass.</P>
-  </div>
-</div>
-  <h1>Instantly generate a secure, random<br> password with the LastPass online tool</h1>
- <p id="pass">Use our online password generator tool to instantly create a secure, random password.</p> 
-  <div class="container">
-    <div class="options">
-      <label for="length">Password Length: <span id="lengthValue">12</span></label>
-      <input type="range" id="length" min="6" max="32" value="12">
+        <label
+          ><input type="checkbox" id="uppercase" checked /> Include
+          Uppercase</label
+        >
+        <label
+          ><input type="checkbox" id="lowercase" checked /> Include
+          Lowercase</label
+        >
+        <label
+          ><input type="checkbox" id="numbers" checked /> Include Numbers</label
+        >
+        <label><input type="checkbox" id="symbols" /> Include Symbols</label>
+      </div>
 
-      <label><input type="checkbox" id="uppercase" checked> Include Uppercase</label>
-      <label><input type="checkbox" id="lowercase" checked> Include Lowercase</label>
-      <label><input type="checkbox" id="numbers" checked> Include Numbers</label>
-      <label><input type="checkbox" id="symbols"> Include Symbols</label>
+      <button id="generateBtn">Generate Password</button>
+      <div class="password-display" id="passwordDisplay">
+        Your password will appear here
+      </div>
+      <button id="copyBtn">Copy Password</button>
+      <div class="strength" id="strengthDisplay">Strength: N/A</div>
+    </div>
+    <!-- password strong -->
+    <h2 class="section-title">What makes a password strong?</h2>
+    <div class="stronger_pass">
+      <div class="makes-strong">
+        <div class="card">
+          <img
+            src="https://static3.avast.com/10003974/web/i/v3/components/icons/feature-icons/80x80/password-checkmark--key-tick.svg"
+          />
+          <h3>Long</h3>
+          <p>
+            The longer a password, the more secure it is. A strong password
+            should be at least 10 characters long.
+          </p>
+        </div>
+        <div class="card">
+          <img
+            src="https://static3.avast.com/10003974/web/i/v3/components/icons/feature-icons/80x80/https-encryption--lock.svg"
+          />
+          <h3>Complex</h3>
+          <p>
+            Strong passwords use a combination of letters, numbers, cases, and
+            symbols to form an unpredictable string of characters that doesn't
+            resemble words or names.
+          </p>
+        </div>
+        <div class="card">
+          <img
+            src="https://static3.avast.com/10003974/web/i/v3/components/icons/feature-icons/80x80/sensitive-data-shield--document-fingerprint.svg"
+          />
+          <h3>Unique</h3>
+          <p>
+            A strong password should be unique to each account to reduce
+            vulnerability in the event of a hack.
+          </p>
+        </div>
+      </div>
     </div>
 
-    <button id="generateBtn">Generate Password</button>
-    <div class="password-display" id="passwordDisplay">Your password will appear here</div>
-    <button id="copyBtn">Copy Password</button>
-    <div class="strength" id="strengthDisplay">Strength: N/A</div>
-    
-  </div>
-
-<!-- js file -->
-  <script src="index.js"></script>
-</body>
+    <!-- js file -->
+    <script src="index.js"></script>
+  </body>
 </html>

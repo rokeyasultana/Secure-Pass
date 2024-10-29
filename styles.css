@@ -1,133 +1,189 @@
- 
 body {
-    background-color: #F0F2F5;
-    font-family: Arial, sans-serif;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
-    margin: 0 ;
-    position: relative;
-  }
-  p{
-    font-size: 18px;
-    color: rgb(101, 99, 99);
-  }
-h3{
+  background-color: #f0f2f5;
+  font-family: Arial, sans-serif;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  margin: 0;
+  position: relative;
+}
+p {
+  font-size: 18px;
+  color: rgb(101, 99, 99);
+}
+h3 {
   text-align: left;
 }
-h1{
+h1 {
   margin-top: 80px;
   text-align: center;
 }
-#pass{
+#pass {
   text-align: center;
 }
 
+.password {
+  background-color: #d0deed;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+  align-items: center;
+  padding: 40px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-left: 10%;
+  margin-right: 10%;
+  margin-top: 20px;
+}
+
+@media (min-width: 768px) {
   .password {
-    background-color: #D0DEED;
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 20px;
-    align-items: center;
-    padding: 40px;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    margin-left: 10%;
-    margin-right: 10%;
-    margin-top: 20px;
+    grid-template-columns: 1fr 2fr;
   }
-  
-  
-  @media (min-width: 768px) {
-    .password {
-      grid-template-columns: 1fr 2fr;
-    }
+}
+
+.image {
+  width: 100%;
+  max-width: 300px;
+  margin: 0 auto;
+  display: block;
+}
+
+.password h4 {
+  font-size: 18px;
+  margin-bottom: 10px;
+  color: #d71340;
+}
+
+.password h2 {
+  font-size: 28px;
+  margin-bottom: 15px;
+  color: #333;
+}
+
+.password p {
+  font-size: 16px;
+  line-height: 1.6;
+  color: #555;
+}
+
+@media (max-width: 767px) {
+  .password {
+    padding: 20px;
   }
-  
-  
-  .image {
-    width: 100%;
-    max-width: 300px;
-    margin: 0 auto;
-    display: block;
-  }
-  
- 
-  .password h4 {
-    font-size: 18px;
-    margin-bottom: 10px;
-    color: #D71340;
-  }
-  
+
   .password h2 {
-    font-size: 28px;
-    margin-bottom: 15px;
-    color: #333;
+    font-size: 24px;
   }
-  
+
   .password p {
-    font-size: 16px;
-    line-height: 1.6;
-    color: #555;
-  }
-  
-  
-  @media (max-width: 767px) {
-    .password {
-      padding: 20px;
-    }
-  
-    .password h2 {
-      font-size: 24px;
-    }
-  
-    .password p {
-      font-size: 14px;
-    }
-  }
-  
-  .container {
-    position: absolute;
-    left: 50%;
-    margin-top: 120px;
-    transform: translate(-50%, -50%);
-    background-color: white;
-    padding: 40px;
-    border-radius: 5px;;
-  margin-top: 200px;
-  }
-  .options {
-    margin: 20px 0;
-  }
-  
-  input[type="range"] {
-    width: 100%;
-    margin-bottom: 10px;
-  }
-  
-  button {
-    padding: 10px 20px;
-    background-color: #D71340;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    margin-top: 10px;
-  }
-  
-  button:hover {
-    background-color: #D71340;
-  }
-  
-  .password-display {
-    margin-top: 20px;
-    font-weight: bold;
-    word-wrap: break-word;
-  }
-  
-  .strength {
-    margin-top: 10px;
     font-size: 14px;
-    border-top: 3px dotted green;
-    text-align: center;
   }
+}
+
+.container {
+  position: absolute;
+  left: 50%;
+  margin-top: 120px;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  padding: 40px;
+  border-radius: 5px;
+  margin-top: 200px;
+}
+.options {
+  margin: 20px 0;
+}
+
+input[type="range"] {
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #d71340;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+button:hover {
+  background-color: #d71340;
+}
+
+.password-display {
+  margin-top: 20px;
+  font-weight: bold;
+  word-wrap: break-word;
+}
+
+.strength {
+  margin-top: 10px;
+  font-size: 14px;
+  border-top: 3px dotted green;
+  text-align: center;
+}
+
+/* What makes password strong */
+.makes-strong {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-content: center;
+  justify-items: center;
+  gap: 20px;
+  padding: 20px;
+  width: 80%;
+  background-color: #fff1e5;
+  border-radius: 5px;
+  margin-bottom: 50px;
+}
+
+.stronger_pass {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 50%;
+}
+.section-title {
+  font-size: 28px;
+  margin-bottom: 20px;
+  color: #333;
+  text-align: center;
+  margin-top: 500px;
+}
+
+.card {
+  background-color: #fff9f5;
+  color: black;
+  padding: 30px;
+  text-align: center;
+  border-radius: 8px;
+  height: 220px;
+  width: 250px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+.card h3 {
+  text-align: center;
+}
+.card p {
+  color: #555;
+  font-size: 15px;
+  text-align: left;
+}
+
+/* Hover Effect for Cards */
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Responsive cards */
+@media (max-width: 768px) {
+  .makes-strong {
+    grid-template-columns: 1fr;
+  }
+}
