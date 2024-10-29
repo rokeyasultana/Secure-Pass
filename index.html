@@ -1,15 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SecurePass</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SecurePass</title>
+  <!-- css file -->
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div>
-        <h1>SecurePass</h1>
+
+<!-- pass -->
+<div class="password">
+  <div>
+    <img class="image" src="https://www.lastpass.com/-/media/0086569cb8be41d5870183fea8cde765.svg?la=en&hash=B6A7489F1C763C10AE5CE1D225381972" alt=""/>
+  </div>
+  <div>
+    <h4>Password Generator</h4>
+    <h2>Your passwords, from any device</h2>
+    <P>Create strong and secure passwords to keep your account safe online.Automatically generate, save and sync your passwords across all your devices at any time with LastPass.</P>
+  </div>
+</div>
+  <h1>Instantly generate a secure, random<br> password with the LastPass online tool</h1>
+ <p id="pass">Use our online password generator tool to instantly create a secure, random password.</p> 
+  <div class="container">
+    <div class="options">
+      <label for="length">Password Length: <span id="lengthValue">12</span></label>
+      <input type="range" id="length" min="6" max="32" value="12">
+
+      <label><input type="checkbox" id="uppercase" checked> Include Uppercase</label>
+      <label><input type="checkbox" id="lowercase" checked> Include Lowercase</label>
+      <label><input type="checkbox" id="numbers" checked> Include Numbers</label>
+      <label><input type="checkbox" id="symbols"> Include Symbols</label>
     </div>
-    <script src="index.js"></script>
+
+    <button id="generateBtn">Generate Password</button>
+    <div class="password-display" id="passwordDisplay">Your password will appear here</div>
+    <button id="copyBtn">Copy Password</button>
+    <div class="strength" id="strengthDisplay">Strength: N/A</div>
+    
+  </div>
+
+<!-- js file -->
+  <script src="index.js"></script>
 </body>
 </html>
