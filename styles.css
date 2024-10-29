@@ -138,7 +138,7 @@ button:hover {
   width: 80%;
   background-color: #fff1e5;
   border-radius: 5px;
-  margin-bottom: 50px;
+  margin-bottom: 20px;
 }
 
 .stronger_pass {
@@ -175,7 +175,7 @@ button:hover {
   text-align: left;
 }
 
-/* Hover Effect for Cards */
+/* Hover Effect */
 .card:hover {
   transform: translateY(-5px);
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
@@ -185,5 +185,7 @@ button:hover {
 @media (max-width: 768px) {
   .makes-strong {
     grid-template-columns: 1fr;
+    margin-bottom: 80px;
   }
+
 }
